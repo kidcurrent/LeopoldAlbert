@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+
+.tab-bar{
+    background: #000;
+}
+
+.left-off-canvas-menu{
+        background: #000;
+}
+
+ul.off-canvas-list li a{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+li{
+    list-style-type: none;
+}
+
+.logo{
+	font-weight: bold;
+	color: #000;
+}
+
+.logo a {
+    color: #000;
+}
+
+.onnatop ul li {
+	list-style-type: none;
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-right: 10px;
+	font-weight: 700;
+}
+
+.onnatop ul li:last-of-type{
+	margin-right: 0;
+}
+
+.onnatop ul li a{
+	color: #333;
+}
+
+.onnatop ul li a:active, .onnatop ul li a:hover{
+	color: #000;
+	text-shadow: -1px 2px 2px rgba(0,0,0,0.08);
+}
+
+.onnatop ul{
+	text-align: center;
+	margin-left: 0;
+}
+
+
+.off-canvas-wrap, .off-canvas-wrap > .inner-wrap {
+  min-height: 100vh;
+}
+
+.coat img{
+	max-width: 100%;
+}
+
+.about{
+    font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	margin-top: 50%;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 640px) {
+.about{
+margin-top: 20px;
+}
+
+}
+
+@media screen and (max-width: 418px) {
+
+.photo-title .toolong {
+  font-size: 1.4rem;
+  margin-top: 8px;
+}
+
+}
+
+/*Highlighter Effect*/
+
+.title {   
+	margin-top: 40px;
+	font-size: 1.25em;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+} 
+
+.title li {
+  display: inline-block;
+  transform: skew(20deg);
+  list-style-type:none;
+  transition: background-position 0.5s ease-out;
+  -webkit-transition: background-position 0.5s ease-out;
+  margin-top: 4px;
+}
+
+.title li a {
+  display: block;
+  color: #222;
+  font-size: 1.75em;
+  line-height: 1.15em;
+  text-decoration: none;
+  transform: skew(-20deg);
+}
+
+.title li:hover {
+  background-size: 200% auto;
+  -webkit-background-size: 200% auto;
+  -moz-background-size: 200% auto;
+  background-position: -0% 0;
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, rgba(243,243,21, 0.5) 50%);
+  background-position: -99.99% 0;
+}
+
+.photo-title p {   
+	font-size: 1.9em;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+} 
+
+.photo-title p a, .photo-title p a:active, .photo-title p a:hover{   
+    color: #333;
+    letter-spacing: 0.05em;
+} 
+
+a#foxyform_embed_link_706376{
+  color: #fff;
+  display: none !important;
+}
+
+iframe{
+    margin-top: 20px !important;
+  width: 100% !important;
+}
+
+#featured { background: url(../img/ring.gif) center center #fff no-repeat; height: 650px; }
+#featured img { display: none; }
+
+#featured.orbit { background: none; }
+#featured.orbit img { display: block; }
