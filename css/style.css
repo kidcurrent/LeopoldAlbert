@@ -56,6 +56,24 @@ li{
 	margin-left: 0;
 }
 
+/*Active classes for the site -  Add to the li tag that you want to be active*/
+
+.active-state {
+  display: inline-block;
+  transform: skew(20deg);
+  list-style-type:none;
+    background-size: 200% auto;
+  -webkit-background-size: 200% auto;
+  -moz-background-size: 200% auto;
+  background-color: rgba(243,243,21,0.5);
+}
+
+.active-state a {
+  display: block;
+  text-decoration: none;
+  transform: skew(-20deg);
+}
+
 
 .off-canvas-wrap, .off-canvas-wrap > .inner-wrap {
   min-height: 100vh;
