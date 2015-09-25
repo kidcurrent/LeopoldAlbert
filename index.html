@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leopold Albert</title>
+
+          <link rel="stylesheet" href="bower_components/BigVideo/css/bigvideo.css">
     <link rel="stylesheet" href="css/foundation.css" />
         <link rel="stylesheet" href="css/style.css" />
     <script src="js/vendor/modernizr.js"></script>
@@ -11,6 +13,8 @@
   <body>
     <div class="off-canvas-wrap" data-offcanvas>
       <div class="inner-wrap">
+          
+          
 <nav class="tab-bar hide-for-medium-up">
           <section class="left-small">
             <a href="" class="left-off-canvas-toggle menu-icon"><span></span></a>
@@ -20,6 +24,7 @@
             <li><a href="collection1.html">Collections</a></li>
             <li><a href="http://leopoldalbert.bigcartel.com/">Shop</a></li>
             <li><a href="project1.html">Projects</a></li>
+            <li><a href="press.html">Press</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -30,12 +35,13 @@
     <div class="row">
       <div class="large-12 columns">
 
-        <h1 class="logo text-center"><a href="index.html">LEOPOLD ALBERT</a></h1>
+        <h1 class="logo text-center"><a href="index.html">LEOPOLD ALBÉRT</a></h1>
         <nav class="onnatop show-for-medium-up">
           <ul>
             <li><a href="collection1.html">Collections</a></li>
             <li><a href="http://leopoldalbert.bigcartel.com/">Shop</a></li>
             <li><a href="project1.html">Projects</a></li>
+            <li><a href="press.html">Press</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -52,8 +58,12 @@
           <li id="featured"><img src="img/BrickLane/BLS-9.jpg" alt=""></li>
             <li><img src="img/BrickLane/BLS-9.jpg" alt=""></li>
             <li><img src="img/BrickLane/BLS-2.jpg" alt=""></li>
-          <li><img src="img/BrickLane/BLS-21.jpg" alt=""></li>
-          <li><img src="img/BrickLane/BLS-39.jpg" alt=""></li>
+          <li><img src="img/BrickLane/BLS-5.jpg" alt=""></li>
+          <li><img src="img/BrickLane/BLS-6.jpg" alt=""></li>
+            <li><img src="img/BrickLane/BLS-8.jpg" alt=""></li>
+            <li><img src="img/BrickLane/BLS-14.jpg" alt=""></li>
+          <li><img src="img/BrickLane/BLS-15.jpg" alt=""></li>
+          <li><img src="img/BrickLane/BLS-18.jpg" alt=""></li>
         </ul>
 
       </div>
@@ -63,6 +73,17 @@
     
     </div> <!-- End inner wrap must go after ALL content -->
     </div> <!-- End offcanvas -->
+
+      
+      	<!-- BigVideo Dependencies -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  	<script>window.jQuery || document.write('<script src="bower_components/jquery/jquery.min.js"><\/script>')</script>
+    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script src="//vjs.zencdn.net/4.3/video.js"></script>
+
+    <!-- BigVideo -->
+    <script src="bower_components/BigVideo/lib/bigvideo.js"></script>
+          <script src="js/rwd.js"></script>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
@@ -83,6 +104,23 @@ $(document).foundation(
         }
       }
       );
+                    
     </script>
+      
+      <script type="text/javascript">
+        //                     BV = new $.BigVideo({forceAutoplay :isTouch});
+        // BV.init();
+        // showVideo();
+        // BV.getPlayer().addEvent('loadeddata', function(){
+        //          onVideoLoaded();
+        //       });
+               
+        // function showVideo() {
+        //     BV.show($('.wrapper.screen:nth-child(1)').attr('data-video'),{ambient:true});               
+        //     $('.wrapper .screen .big-image').css({opacity:1});               }  
+        // function onVideoLoaded(){$('.wrapper .screen:nth-child(1)').find('.big-image').        animate({opacity:0},500);
+        //          }
+      </script>
+
   </body>
 </html>
