@@ -341,8 +341,6 @@ iframe{
 .footer-long{
     width: 100%;
     border-top: 1px #777 solid;
-    position: absolute;
-    bottom: 0;
 }
 
 .footer-long p{
