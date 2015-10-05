@@ -6,14 +6,29 @@
     <title>Leopold Albert</title>
 
           <link rel="stylesheet" href="bower_components/BigVideo/css/bigvideo.css">
-    <link rel="stylesheet" href="css/foundation.css" />
+        <link rel="stylesheet" href="css/foundation.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="js/vendor/modernizr.js"></script>
+  
   </head>
   <body>
+                <div id="hide">
+     <ul data-orbit>
+          <li id="featured"><img src="img/BrickLane/BLS-9.jpg" alt=""></li>
+            <li><img src="img/BrickLane/BLS-9.jpg" alt=""></li>
+            <li><img src="img/BrickLane/BLS-2.jpg" alt=""></li>
+          <li><img src="img/BrickLane/BLS-5.jpg" alt=""></li>
+            <li><img src="img/BrickLane/BLS-6.jpg" alt=""></li>
+
+        </ul>
+                    
+                    <div class="logo-above"><div class="middle-div"><img src="img/logo2.png"></div></div>
+          </div>
     <div class="off-canvas-wrap" data-offcanvas>
       <div class="inner-wrap">
           
+
           
 <nav class="tab-bar hide-for-medium-up">
           <section class="left-small">
@@ -32,7 +47,7 @@
           </aside>
           <a class="exit-off-canvas"></a>
 
-    <div class="row">
+   <div class="row">
       <div class="large-12 columns">
 
         <h1 class="logo text-center"><a href="index.html">LEOPOLD ALBÉRT</a></h1>
@@ -46,11 +61,17 @@
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
+            <ul class="icons-right">
+            <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
+            <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
+            <li><a href=""><i class="fa fa-tumblr-square"></i></a></li>
+            <li><a href=""><i class="fa fa-instagram"></i></a></li>
+            </ul>
         </nav>
 
       </div>
-    </div>
-    
+    </div> 
+
     <div class="row">
       <div class="large-12 columns">
 
@@ -68,9 +89,8 @@
 
       </div>
     </div>
+                   <div class="footer-long"><p>2015 CAMO LABORATORY LTD. ALL RIGHTS RESERVED</p></div>
 
-    
-    
     </div> <!-- End inner wrap must go after ALL content -->
     </div> <!-- End offcanvas -->
 
@@ -94,33 +114,26 @@ $(document).foundation(
         orbit : {
           timer : true,
           animation : 'fade',
-          timer_speed : 3000, 
+          timer_speed : 1600, 
           swipe : true,
           navigation_arrows : false,
           slide_number : false,
           pause_on_hover : false,
-          animation_speed : 2000,
+          animation_speed : 600,
           bullets: false
         }
       }
       );
                     
     </script>
-      
-      <script type="text/javascript">
-        //                     BV = new $.BigVideo({forceAutoplay :isTouch});
-        // BV.init();
-        // showVideo();
-        // BV.getPlayer().addEvent('loadeddata', function(){
-        //          onVideoLoaded();
-        //       });
-               
-        // function showVideo() {
-        //     BV.show($('.wrapper.screen:nth-child(1)').attr('data-video'),{ambient:true});               
-        //     $('.wrapper .screen .big-image').css({opacity:1});               }  
-        // function onVideoLoaded(){$('.wrapper .screen:nth-child(1)').find('.big-image').        animate({opacity:0},500);
-        //          }
-      </script>
+
+        <script>
+        $.noConflict();
+jQuery(document).ready(function($){
+        BV.getPlayer().on('durationchange',function(){
+    $('#big-video-wrap').fadeIn();
+});
+  </script>
 
   </body>
 </html>

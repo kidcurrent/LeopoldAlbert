@@ -1,7 +1,90 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
 
+/*Bigvideo.js CSS*/
+
+#big-video-wrap {
+    display: none;
+}
+
+.vjs-control-bar {
+display: none;
+}
+
+
+#hide{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10000000;
+    cursor: pointer;
+    overflow-y: hidden;
+    background-color: white;
+}
+
+.logo-above{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.middle-div{
+    text-align: center;
+}
+
+@media screen and (max-width: 855px) {
+
+#hide{
+    display: none;
+}
+
+}
+
+.contact-info{
+    font-family: roboto;
+    color: #222;
+    padding-top: 10px;
+    padding-left: 17px;
+    text-decoration: underline;
+}
 
 /*Nav*/
+
+.fa-facebook-square:before, .fa-twitter-square:before, .fa-tumblr-square:before, .fa-instagram:before{
+    font-size: 1.4em;
+}
+
+.fa-facebook-square:hover{   
+    color: #395597;
+}
+
+.fa-twitter-square:hover{
+    color: #50ABF1;
+}
+
+.fa-tumblr-square:hover{
+    color: #35455E;
+}
+
+.fa-instagram:hover{
+    color: #946356; 
+}
+
+.fa-long-arrow-left:before {
+    font-size: 1.7em;
+}
+
+
+.icons-right{
+    text-align: right;
+    position: absolute;
+    right: 24px;
+    top: 19px;
+}
+
+
+.text-right li{
+    display: inline-block;
+}
 
 .tab-bar{
     background: #000;
@@ -17,6 +100,7 @@ ul.off-canvas-list li a{
     letter-spacing: 0.1em;
     font-weight: 300;
     font-size: 14px;
+    font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 
 li{
@@ -59,6 +143,10 @@ li{
 	margin-left: 0;
 }
 
+ul.off-canvas-list li a {
+    font-family: roboto;
+}
+
 /*Active classes for the site -  Add to the li tag that you want to be active*/
 
 .active-state {
@@ -88,8 +176,33 @@ li{
 
 .about{
     font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-	margin-top: 50%;
-    font-weight: 300;
+	margin-top: 40%;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 786px) {
+    .title.text-smaller{
+        font-size: 1.05em;
+    }
+}
+
+@media screen and (max-width: 667px) {
+        .title.text-smaller{
+        font-size: 0.95em;
+    }
+}
+
+@media screen and (max-width: 546px) {
+        .title.text-smaller{
+        font-size: 0.85em;
+    }
+}
+
+@media screen and (max-width: 546px) {
+        .title.text-smaller{
+        font-size: 0.85em;
+        line-height: 2.7em;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -97,6 +210,15 @@ li{
 margin-top: 20px;
 }
 
+    .text-center{
+        margin-top: 38px;
+        margin-bottom: 48px;
+    }
+    
+    #no-margin{
+        margin-top: 0px;
+    }
+    
 }
 
 @media screen and (max-width: 418px) {
@@ -105,7 +227,38 @@ margin-top: 20px;
   font-size: 1.4rem;
   margin-top: 8px;
 }
+    
+        .text-center{
+        margin-top: 18px;
+            margin-bottom: 10px;
+    }
 
+}
+
+@media screen and (max-width: 385px) {
+
+.photo-title .toolong{
+    font-size: 1.25rem;
+  margin-top: 8px;
+}
+
+.photo-title p{
+    font-size: 1.25rem !important;
+  margin-top: 4px;
+}
+
+}
+
+@media screen and (max-width: 320px) {
+    
+        #no-margin{
+        margin-top: 40px;
+    }
+
+.photo-title .toolong{
+    font-size: 1.1rem !important;
+  margin-top: 8px;
+}
 }
 
 /*Highlighter Effect*/
@@ -165,10 +318,48 @@ a#foxyform_embed_link_706376{
 
 iframe{
     margin-top: 20px !important;
-  width: 100% !important;
+    width: 100% !important;
 }
 
-#featured { background: url(../img/ring.gif) center center #fff no-repeat; height: 650px; }
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px #777 solid;
+}
+
+.footer p{
+    padding-top: 10px;
+    text-align: center;
+    font-family: roboto;
+    color: #554;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    transform: rotate(-0.03deg);
+}
+
+.footer-long{
+    width: 100%;
+    border-top: 1px #777 solid;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-long p{
+    padding-top: 10px;
+    text-align: center;
+    font-family: roboto;
+    color: #554;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    transform: rotate(-0.03deg);
+}
+
+.top-space{
+    margin-top: 20px;
+}
+
+#featured { background: url(../img/ring.gif) center center rgba(255, 255, 255, 0) no-repeat; height: 750px; overflow: hidden; }
 #featured img { display: none; }
 
 #featured.orbit { background: none; }

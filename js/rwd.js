@@ -1,8 +1,12 @@
-
+(function($) { 
 $.noConflict();
 jQuery(document).ready(function($){
       
         // console.log($.BigVideo());
+    
+        $("#hide").click(function(){
+        $("#hide").fadeOut( "slow" );
+    });
 
         var BV = new $.BigVideo({
           doLoop:true, 
@@ -10,10 +14,19 @@ jQuery(document).ready(function($){
         });
         BV.init();
         console.log(BV);
-        BV.show('video/Building.mp4'); 
+        BV.show('video/LeopoldALBERT-HD.mp4'); 
         // showVideo();
         // BV.getPlayer().addEvent('loadeddata', function(){
         //   onVideoLoaded();
         // });
+    
+        BV.getPlayer().on('durationchange',function(){
+    $('#big-video-wrap').fadeIn();
+});
+    
 });
  
+
+    
+    
+})(jQuery);
