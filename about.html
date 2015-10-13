@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leopold Albert</title>
     <link rel="stylesheet" href="css/foundation.css" />
-        <link rel="stylesheet" href="css/style.css" />
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/style.css" />  
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
@@ -28,26 +28,30 @@
           </ul>
           </aside>
           <a class="exit-off-canvas"></a>
+          
+          
+          
+          
 
     <div class="row">
       <div class="large-12 columns">
 
         <h1 class="logo text-center"><a href="index.html">LEOPOLD ALBÉRT</a></h1>
-        <nav class="onnatop show-for-medium-up">
+        <nav class="onnatop show-for-medium-up" data-magellan-expedition="fixed">
           <ul>
             <li><a href="collection1.html">Collections</a></li>
             <li><a href="http://leopoldalbert.bigcartel.com/">Shop</a></li>
             <li><a href="project1.html">Projects</a></li>
             <li><a href="press.html">Press</a></li>
-            <li><a href="about.html">About</a></li>
-            <li class="active-state"><a href="blog.html">Blog</a></li>
+            <li class="active-state"><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
             <ul class="icons-right">
-            <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
-            <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
-            <li><a href=""><i class="fa fa-tumblr-square"></i></a></li>
-            <li><a href=""><i class="fa fa-instagram"></i></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/Leopoldalbertclothing"><i class="fa fa-facebook-square"></i></a></li>
+            <li><a target="_blank" href="https://twitter.com/Leopoldalbert_"><i class="fa fa-twitter-square"></i></a></li>
+            <li><a target="_blank" href="http://leopoldalbert.tumblr.com/"><i class="fa fa-tumblr-square"></i></a></li>
+            <li><a target="_blank" href="https://instagram.com/leopoldalbert_/"><i class="fa fa-instagram"></i></a></li>
             </ul>
         </nav>
 
@@ -62,7 +66,7 @@
       </div>
  
       <div class="large-6 medium-6 small-12 large-pull-6 medium-pull-6 columns coat" data-equalizer-watch>
-<img src="img/AW14_Images/AW14LOOK17.jpg" alt="">
+<img src="img/About-img.jpg" alt="Head Designer - Leopold Albert">
       </div>
     </div>
 
@@ -79,8 +83,17 @@
     <script src="js/foundation.min.js"></script>
     <script>
 
-$(document).foundation(
-      );
+$(document).foundation({
+"magellan-expedition": {
+  active_class: 'active', // specify the class used for active sections
+  threshold: 0, // how many pixels until the magellan bar sticks, 0 = auto
+  destination_threshold: 20, // pixels from the top of destination for it to be considered active
+  throttle_delay: 50, // calculation throttling to increase framerate
+  fixed_top: 0, // top distance in pixels assigend to the fixed element on scroll
+  offset_by_height: true // whether to offset the destination by the expedition height. Usually you want this to be true, unless your expedition is on the side.
+}
+});
+        
     </script>
   </body>
 </html>

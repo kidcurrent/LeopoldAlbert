@@ -33,40 +33,40 @@
       <div class="large-12 columns">
 
         <h1 class="logo text-center"><a href="index.html">LEOPOLD ALBÉRT</a></h1>
-        <nav class="onnatop show-for-medium-up">
+        <nav class="onnatop show-for-medium-up" data-magellan-expedition="fixed">
           <ul>
-            <li><a href="collection1.html">Collections</a></li>
+            <li class="active-state"><a href="collection1.html">Collections</a></li>
             <li><a href="http://leopoldalbert.bigcartel.com/">Shop</a></li>
             <li><a href="project1.html">Projects</a></li>
             <li><a href="press.html">Press</a></li>
             <li><a href="about.html">About</a></li>
-            <li class="active-state"><a href="blog.html">Blog</a></li>
+            <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
             <ul class="icons-right">
-            <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
-            <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
-            <li><a href=""><i class="fa fa-tumblr-square"></i></a></li>
-            <li><a href=""><i class="fa fa-instagram"></i></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/Leopoldalbertclothing"><i class="fa fa-facebook-square"></i></a></li>
+            <li><a target="_blank" href="https://twitter.com/Leopoldalbert_"><i class="fa fa-twitter-square"></i></a></li>
+            <li><a target="_blank" href="http://leopoldalbert.tumblr.com/"><i class="fa fa-tumblr-square"></i></a></li>
+            <li><a target="_blank" href="https://instagram.com/leopoldalbert_/"><i class="fa fa-instagram"></i></a></li>
             </ul>
         </nav>
 
       </div>
     </div>
     
-    <div class="row">
+    <div class="row height-container">
+        <div class="height-outerbox">
       <div class="large-12 text-center columns">
-          
       <div class="title">
-        <li><a href="#">ss14 lookbook</a></li></br>
-        <li><a href="#">ss14 campaign</a></li></br>
+        <li><a href="ss-14.html">ss14 lookbook</a></li></br>
         <li><a href="aw14.html">aw14 lookbook</a></li>
       </div>
 
       </div>
+        </div>
     </div>
     
-           <div class="footer"><p>2015 CAMO LABORATORY LTD. ALL RIGHTS RESERVED</p></div>
+           <div class="footer height-footer2"><p>2015 CAMO LABORATORY LTD. ALL RIGHTS RESERVED</p></div>
 
       
     </div> <!-- End inner wrap must go after ALL content -->
@@ -74,23 +74,19 @@
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
-    <script>
+    
+        <script>
 
-$(document).foundation(
-      {
-        orbit : {
-          timer : true,
-          animation : 'fade',
-          timer_speed : 3000, 
-          swipe : true,
-          navigation_arrows : false,
-          slide_number : false,
-          pause_on_hover : false,
-          animation_speed : 2000,
-          bullets: false
-        }
-      }
-      );
+$(document).foundation({
+"magellan-expedition": {
+  active_class: 'active', // specify the class used for active sections
+  threshold: 0, // how many pixels until the magellan bar sticks, 0 = auto
+  destination_threshold: 20, // pixels from the top of destination for it to be considered active
+  throttle_delay: 50, // calculation throttling to increase framerate
+  fixed_top: 0, // top distance in pixels assigend to the fixed element on scroll
+  offset_by_height: true // whether to offset the destination by the expedition height. Usually you want this to be true, unless your expedition is on the side.
+}
+});
     </script>
   </body>
 </html>

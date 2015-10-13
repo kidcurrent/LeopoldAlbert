@@ -62,18 +62,18 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
             <ul class="icons-right">
-            <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
-            <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
-            <li><a href=""><i class="fa fa-tumblr-square"></i></a></li>
-            <li><a href=""><i class="fa fa-instagram"></i></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/Leopoldalbertclothing"><i class="fa fa-facebook-square"></i></a></li>
+            <li><a target="_blank" href="https://twitter.com/Leopoldalbert_"><i class="fa fa-twitter-square"></i></a></li>
+            <li><a target="_blank" href="http://leopoldalbert.tumblr.com/"><i class="fa fa-tumblr-square"></i></a></li>
+            <li><a target="_blank" href="https://instagram.com/leopoldalbert_/"><i class="fa fa-instagram"></i></a></li>
             </ul>
         </nav>
 
       </div>
     </div> 
 
-    <div class="row">
-      <div class="large-12 columns">
+    <div class="row height-container">
+      <div class="large-12 columns height-outerbox">
 
         <ul data-orbit>
           <li id="featured"><img src="img/BrickLane/BLS-9.jpg" alt=""></li>
@@ -89,7 +89,7 @@
 
       </div>
     </div>
-                   <div class="footer-long"><p>2015 CAMO LABORATORY LTD. ALL RIGHTS RESERVED</p></div>
+                   <div class="footer height-footer2"><p>2015 CAMO LABORATORY LTD. ALL RIGHTS RESERVED</p></div>
 
     </div> <!-- End inner wrap must go after ALL content -->
     </div> <!-- End offcanvas -->
@@ -133,6 +133,16 @@ jQuery(document).ready(function($){
         BV.getPlayer().on('durationchange',function(){
     $('#big-video-wrap').fadeIn();
 });
+  </script>
+      
+  <script>
+      var BV = new $.BigVideo();
+BV.init();
+if (Modernizr.touch) {
+    BV.show('placeholder.jpg');
+} else {
+    BV.show('video/LeopoldALBERT-HD.mp4',{ambient:true});
+}
   </script>
 
   </body>
