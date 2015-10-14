@@ -13,6 +13,13 @@ jQuery(document).ready(function($){
           controls: false
         });
         BV.init();
+    
+    if (Modernizr.touch) {
+    BV.show('video-poster.jpg');
+} else {
+    BV.show('video/LeopoldALBERT-HD.mp4',{ambient:true});
+}
+    
         console.log(BV);
         BV.show('video/LeopoldALBERT-HD.mp4'); 
         // showVideo();
