@@ -20,12 +20,13 @@
     vertical-align: top;
     }
 
+/*
 @media screen and (max-width: 375px){
 
     #content-320 { 
         width: 300px !important;
-        min-height:782px; /* for modern browsers */
-        height:782px; /* for IE5.x and IE6 */
+        min-height:782px; 
+        height:782px; 
         height:auto !important;
     }
 
@@ -34,13 +35,14 @@
         border:none;
         margin: 0;
         padding: 0;
-        min-height:782px; /* for modern browsers */
+        min-height:782px; 
         height:auto !important;
-        height:782px; /* for IE5.x and IE6 */
+        height:782px; 
         display: block;
     }
     
 }
+*/
 
 /*Bigvideo.js CSS*/
 
