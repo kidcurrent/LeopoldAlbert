@@ -15,9 +15,17 @@
 }
 
 @media screen and (max-width: 414px){
-    .orbit-slides-container{
-        height: 550px;
-    }
+    .footer{
+        position: static !important;
+        width: 100% !important;
+        border-top: 1px #777 solid !important;
+}
+    
+    .height-container {
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 0px;
+}
 }
 
 
