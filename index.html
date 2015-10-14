@@ -126,15 +126,24 @@ $(document).foundation(
       );
                     
     </script>
+      
+            <script>
+        var BV = new $.BigVideo();
+BV.init();
+if (Modernizr.touch) {
+    BV.show('white.jpg');
+} else {
+    BV.show('video.mp4',{ambient:false});
+      </script>
 
         <script>
         $.noConflict();
-jQuery(document).ready(function($){
+        jQuery(document).ready(function($){
         BV.getPlayer().on('durationchange',function(){
-    $('#big-video-wrap').fadeIn();
+        $('#big-video-wrap').fadeIn();
 });
   </script>
-      
+
 
   </body>
 </html>

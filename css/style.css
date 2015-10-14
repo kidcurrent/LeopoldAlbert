@@ -22,14 +22,15 @@
 
 @media screen and (max-width: 375px){
 
-    #content1 { 
+    #content-320 { 
+        width: 300px !important;
         min-height:782px; /* for modern browsers */
         height:782px; /* for IE5.x and IE6 */
         height:auto !important;
     }
 
-    #content1 iframe{
-        width:100% !important;
+    #content-320 iframe{
+        width: 300px !important;
         border:none;
         margin: 0;
         padding: 0;
